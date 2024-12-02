@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+@mixin navhoverstyle {
+    border-bottom: solid #FF2953;
+}
+
+@mixin divsamestyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.nav-link:hover {
+    @include navhoverstyle;
+
+}
+
+.navbar-brand:hover {
+    @include navhoverstyle;
+}
+
+.nav-link {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.current {
+    @include navhoverstyle;
+}
+
+.brand-navi {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px;
+    padding: 8px;
+    margin: 0 24px;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.img-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -55;
+}
+
+.color-back {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.contant {
+    color: #fff;
+    border: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border: solid #fff;
+
+}
+
+.contant:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.why-choose-us {
+    width: 100%;
+    height: 561px;
+    background: url(./assets/images/us-bg.jpg);
+    @include divsamestyle;
+    height: auto;
+    padding: 35px 35px 35px 35px;
+}
+
+.title-choose {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.healthy-body {
+    width: 100%;
+    height: 554px;
+    background: url(./assets/images/healthy-bg.jpg);
+    @include divsamestyle;
+    height: auto;
+    padding: 35px 35px 35px 35px;
+}
+
+
+.trainers {
+    width: 100%;
+    height: 720px;
+    background: url(./assets/images/trainer-bg.jpg);
+    @include divsamestyle;
+    height: auto;
+    padding: 35px 35px 35px 35px;
+}
+
+.trainer-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.img-trainer {
+    border-radius: 20px;
+}
+
+.soical {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+    padding: 12px 45px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    margin-top: -25px;
+
+}
+
+
+.contant-to-us {
+    width: 100%;
+    height: auto;
+    background-color: #27223f;
+    @include divsamestyle;
+    height: auto;
+    padding: 35px 35px 35px 35px;
+}
+
+.footer {
+    background-color: #252233;
+    width: 100%;
+    @include divsamestyle;
+    height: auto;
+    padding: 35px 35px 35px 35px;
+    height: 250px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .footer{
+        height: auto;
+    }
+  }
